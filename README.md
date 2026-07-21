@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="images/banner.png" alt="PCB Defect Detection Banner" width="100%">
+</p>
 # 🤖 AI-Based PCB Defect Detection and Inspection System using YOLOv8
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
@@ -57,30 +60,21 @@ The model detects six PCB defects:
 | Spurious Copper |
 
 ---
+## 🏗️ System Workflow
 
-# 🏗 System Architecture
-
-```text
-PCB Image
-     │
-     ▼
-Image Preprocessing
-     │
-     ▼
-YOLOv8n Detection Model
-     │
-     ▼
-Defect Identification
-(Class + Bounding Box + Confidence)
-     │
-     ▼
-Streamlit User Interface
-     │
-     ▼
-Inspection Result
+```mermaid
+flowchart TD
+    A[PCB Image Input] --> B[Image Preprocessing]
+    B --> C[YOLOv8n Model]
+    C --> D[Defect Detection]
+    D --> E[Bounding Boxes]
+    D --> F[Class Labels]
+    D --> G[Confidence Scores]
+    E --> H[Streamlit Dashboard]
+    F --> H
+    G --> H
+    H --> I[Inspection Report]
 ```
-
----
 
 # 🛠 Technologies Used
 
@@ -187,3 +181,58 @@ The system predicts:
 ## ⭐ Support
 
 If you found this project useful, consider giving it a ⭐ on GitHub.
+# 📈 Model Training Results
+
+The following plots were automatically generated during YOLOv8n training and provide insights into model convergence and performance.
+
+## Training Metrics
+
+![Training Results](images/results.png)
+
+---
+
+## Confusion Matrix
+
+The confusion matrix illustrates the classification performance across all PCB defect classes.
+
+![Confusion Matrix](images/confusion_matrix.png)
+
+---
+
+## Precision–Recall Curve
+
+![PR Curve](images/PR_curve.png)
+
+---
+
+## Precision Curve
+
+![Precision Curve](images/P_curve.png)
+
+---
+
+## Recall Curve
+
+![Recall Curve](images/R_curve.png)
+
+---
+
+## F1 Score Curve
+
+![F1 Curve](images/F1_curve.png)
+
+---
+
+## Dataset Label Distribution
+
+![Labels](images/labels.jpg)
+# 🔍 Sample Detection Results
+
+The following examples demonstrate the model's ability to identify PCB defects with bounding boxes, defect labels, and confidence scores.
+
+| Sample | Result |
+|---------|--------|
+| Prediction 1 | ![](images/prediction1.png) |
+| Prediction 2 | ![](images/prediction2.png) |
+| Prediction 3 | ![](images/prediction3.png) |
+| Prediction 4 | ![](images/prediction4.png) |
