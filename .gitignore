@@ -1,0 +1,8 @@
+datasets/
+runs/
+outputs/
+kaggle_upload/
+notebooks/
+*.pt
+*.pth
+assets/
