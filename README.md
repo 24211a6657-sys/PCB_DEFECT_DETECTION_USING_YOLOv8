@@ -1,33 +1,92 @@
 # 🤖 AI-Based PCB Defect Detection and Inspection System using YOLOv8
 
-An AI-powered Printed Circuit Board (PCB) defect detection and inspection system developed using **YOLOv8** and **Computer Vision**. The system automatically detects manufacturing defects in PCB images with high accuracy, enabling faster and more reliable quality inspection.
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-red)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ---
 
 ## 📌 Project Overview
 
-Printed Circuit Boards (PCBs) are the backbone of modern electronic devices. Manual PCB inspection is time-consuming, expensive, and prone to human error.
+Printed Circuit Boards (PCBs) are the foundation of modern electronic systems. Traditional PCB inspection is performed manually, making it time-consuming, labor-intensive, and susceptible to human error.
 
-This project uses **YOLOv8**, a state-of-the-art object detection model, to automatically detect multiple PCB defects from images, helping improve manufacturing quality and reduce inspection time.
+This project presents an **AI-Based PCB Defect Detection and Inspection System** powered by **YOLOv8n** and **Computer Vision** to automatically identify manufacturing defects from PCB images. The system enables fast, accurate, and reliable quality inspection suitable for industrial environments.
 
 ---
 
-## ✨ Features
+# 🏭 Problem Statement
 
-- Automated PCB defect detection
-- YOLOv8-based object detection
+Manual PCB inspection:
+
+- Time-consuming
+- Expensive
+- Error-prone
+- Difficult to scale
+
+This project automates the inspection process using Deep Learning to improve manufacturing quality and reduce inspection time.
+
+---
+
+# ✨ Features
+
+- Automatic PCB defect detection
+- YOLOv8n object detection model
 - Multiple defect classification
 - Bounding box visualization
 - Confidence score prediction
-- Easy-to-use Python implementation
-- Industrial quality inspection approach
+- Streamlit Web Application
+- Fast inference
+- Easy-to-use interface
+- Computer Vision based inspection
 
 ---
 
-## 🛠 Technologies Used
+# 🧠 Defect Classes
+
+The model detects six PCB defects:
+
+| Class |
+|--------|
+| Mouse Bite |
+| Spur |
+| Missing Hole |
+| Short |
+| Open Circuit |
+| Spurious Copper |
+
+---
+
+# 🏗 System Architecture
+
+```text
+PCB Image
+     │
+     ▼
+Image Preprocessing
+     │
+     ▼
+YOLOv8n Detection Model
+     │
+     ▼
+Defect Identification
+(Class + Bounding Box + Confidence)
+     │
+     ▼
+Streamlit User Interface
+     │
+     ▼
+Inspection Result
+```
+
+---
+
+# 🛠 Technologies Used
 
 - Python
-- YOLOv8 (Ultralytics)
+- YOLOv8n
+- Ultralytics
 - OpenCV
 - NumPy
 - Streamlit
@@ -35,48 +94,15 @@ This project uses **YOLOv8**, a state-of-the-art object detection model, to auto
 
 ---
 
-## 📂 Dataset
+# 📂 Dataset
 
-Dataset Source:
+**Source:** Kaggle PCB Defect Dataset
 
-**Kaggle PCB Defect Dataset**
-
-Defect Classes:
-
-- Mouse Bite
-- Spur
-- Missing Hole
-- Short
-- Open Circuit
-- Spurious Copper
+The dataset contains annotated PCB images covering six common manufacturing defects.
 
 ---
 
-## 🏗 Project Structure
-
-```text
-PCB_Defect_Detection/
-│
-├── assets/
-├── datasets/
-├── docs/
-├── logs/
-├── models/
-├── notebooks/
-├── outputs/
-├── reports/
-├── runs/
-├── src/
-│
-├── main.py
-├── requirements.txt
-├── README.md
-└── .gitignore
-```
-
----
-
-## ⚙ Installation
+# ⚙ Installation
 
 Clone the repository
 
@@ -84,7 +110,7 @@ Clone the repository
 git clone https://github.com/24211a6657-sys/PCB_DEFECT_DETECTION_USING_YOLOv8.git
 ```
 
-Go inside the project
+Move into the project directory
 
 ```bash
 cd PCB_DEFECT_DETECTION_USING_YOLOv8
@@ -98,7 +124,13 @@ pip install -r requirements.txt
 
 ---
 
-## ▶ Running the Project
+# ▶ Run the Project
+
+```bash
+streamlit run app.py
+```
+
+or
 
 ```bash
 python main.py
@@ -106,49 +138,52 @@ python main.py
 
 ---
 
-## 📊 Model
+# 📈 Model Information
 
-Model Used:
-
-YOLOv8 Nano (YOLOv8n)
-
-Framework:
-
-Ultralytics YOLOv8
-
----
-
-## 🎯 Results
-
-The model detects PCB defects and displays
-
-- Bounding Boxes
-- Defect Labels
-- Confidence Scores
-
-Example outputs are available in the repository.
+| Parameter | Value |
+|------------|-------|
+| Model | YOLOv8n |
+| Framework | Ultralytics |
+| Language | Python |
+| Application | PCB Defect Detection |
 
 ---
 
-## 🚀 Future Improvements
+# 📸 Results
 
-- Real-time camera integration
-- Industrial conveyor belt inspection
-- Web dashboard
+The system predicts:
+
+- Defect Name
+- Confidence Score
+- Bounding Box
+- Detection Visualization
+
+> 📷 Output screenshots will be added soon.
+
+---
+
+# 🚀 Future Enhancements
+
+- Live camera inspection
+- Conveyor belt integration
+- Industrial deployment
+- Edge AI optimization
 - Cloud deployment
-- Improved detection accuracy
-- Edge AI deployment
+- Improved model accuracy
+- Mobile application support
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Developed by
 
 **Abhi Sathwika Goundla**
 
-B.Tech – Computer Science with Artificial Intelligence
+**B.Tech – CSE (AI-ML)**
 
-B V Raju Institute of Technology
+**B V Raju Institute of Technology**
 
 ---
 
-## ⭐ If you found this project useful, consider giving it a star!
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
