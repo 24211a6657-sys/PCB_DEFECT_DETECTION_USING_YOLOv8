@@ -228,11 +228,22 @@ The confusion matrix illustrates the classification performance across all PCB d
 ![Labels](images/labels.jpg)
 # 🔍 Sample Detection Results
 
-The following examples demonstrate the model's ability to identify PCB defects with bounding boxes, defect labels, and confidence scores.
+The following examples demonstrate the model's ability to identify PCB defects with bounding boxes and defect labels.
 
-| Sample | Result |
-|---------|--------|
-| Prediction 1 | ![](images/prediction1.png) |
-| Prediction 2 | ![](images/prediction2.png) |
-| Prediction 3 | ![](images/prediction3.png) |
-| Prediction 4 | ![](images/prediction4.png) |
+|## 🔍 Sample Detection Results
+
+### Prediction 1
+
+<img src="images/prediction1.jpg" width="700">
+
+### Prediction 2
+
+<img src="images/prediction2.jpg" width="700">
+
+### Prediction 3
+
+<img src="images/prediction3.jpg" width="700">
+
+### Prediction 4
+
+<img src="images/prediction4.jpg" width="700">
